@@ -5,7 +5,6 @@ import { computed, ref } from 'vue'
   <div class="w-100 text-center">
     <h2>ROUTER COMPONENT</h2>
   </div>
-
 </template>
 
 <!-- View значит что компонент что то отоброжает -->
