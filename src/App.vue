@@ -10,6 +10,7 @@ import Hooks from './components/hooks/Hooks.vue'
         <RouterLink to="/" class="navigation mr-2">Home</RouterLink>
         <RouterLink to="/hooks" class="navigation mr-2">Hooks</RouterLink>
         <RouterLink to="/router" class="navigation mr-2">Router</RouterLink>
+        <RouterLink to="/users" class="navigation mr-2">Users</RouterLink>
         <a @click="$router.push('/hooks')" class="router-push navigation mr-2">Router push</a>
         <a @click="$router.push({ name: 'Router' })" class="router-push navigation mr-2"
           >Router push to router</a
