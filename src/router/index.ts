@@ -9,6 +9,7 @@ const router = createRouter({
   //параметр routes - это описание url адресов на которые будет наш роутер реагировать
   routes: [
     // {
+    //в свойстве 'path' может менятся поэтому лучше всего использовать навигацию через 'name'
     //   path: '/',
     //   name: 'App',
     //   component: () => import('../../src/App.vue')
