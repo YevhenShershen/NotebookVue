@@ -1,2 +1,8 @@
 @import './base.css';
 /* @import './reset.css'; */
+body {
+  height: 100%;
+}
+#app{
+ height: 100vh;
+}

@@ -13,7 +13,7 @@ function handleClick() {
   <div class="d-flex flex-column">
     <a
       v-for="(user, userId) in users"
-      :key="id"
+      :key="userId"
       @click="$router.push({ name: 'User', params: { id: userId } })"
       >{{ user }}</a
     >
