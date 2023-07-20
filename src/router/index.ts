@@ -8,17 +8,24 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   //параметр routes - это описание url адресов на которые будет наш роутер реагировать
   routes: [
-    // {
     //в свойстве 'path' может менятся поэтому лучше всего использовать навигацию через 'name'
-    //   path: '/',
-    //   name: 'App',
-    //   component: () => import('../../src/App.vue')
-    // },
     {
-      path: '/router',
+      path: '/',
       name: 'Router',
       //компонент загружается заранее(для маленьких компонентов и проектов)
-      component: RouterView
+      component: () => import('../views/RouterView.vue'),
+      children: [
+        {
+          path: '',
+          name: 'Children1',
+          component: () => import('../components/routers/ChildrenComponent1.vue')
+        },
+        {
+          path: 'child2',
+          name: 'Children2',
+          component: () => import('../components/routers/ChildrenComponent2.vue')
+        }
+      ]
     },
     {
       path: '/hooks',
